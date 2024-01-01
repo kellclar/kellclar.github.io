@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <style>
+        /* body */
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #fefff7;
+        }
+
+        /* heading */
+        #head{
+            display: grid;
+            grid-template-columns: 50% 1fr;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: #06519E;
+        }
+        #logo{
+            display: flex;
+            margin-left: -250px;
+            justify-content: space-around;
+        }
+        #logo-1{
+            font-size: 35px;
+            font-weight: bold;
+            font-style: italic;
+            color: #ffc3dd;
+            text-decoration: none;
+        }
+        #options{
+            margin-right: 30px;
+            color: #fefff7;
+            text-align: center;
+        }
+
+        #options a{
+            text-decoration: none;
+            color: #fefff7;
+            justify-content: space-around;
+            padding: 40px;
+        }
+
+        #options a:hover{
+            color: #06519E;
+            background-color: #fefff7;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        /* intro */
+        #intro{
+            display: flex;
+            flex-direction: column;
+            white-space: nowrap;
+        }
+
+        #hello-pic{
+            width: 100%;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        #description-me{
+            width: 100%;
+            height: 200px;
+            background-color: #14173a;
+            margin-top: 0px;
+            padding-top: 30px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+            flex-direction: row;
+            color: #fefff7;
+            padding-bottom: 50px;
+        }
+
+        #Edu{
+            background-color: #fefff7;
+            width: 300px;
+            height: 40px;
+            color: #ffc3dd;
+            border-radius: 22px;
+            text-align: center;
+            justify-items: center;
+        }
+
+        #edu h3{
+            font-size: 16px;
+            margin-bottom: 0px;
+            margin-left: 30px;
+        }
+
+        #edu p{
+            font-size: 12px;
+            margin-top: 0px;
+            margin-left: 30px;
+        }
+
+
+
+        #lang-skill{
+            background-color: #fefff7;
+            width: 300px;
+            height: 40px;
+            color: #ffc3dd;
+            border-radius: 22px;
+            text-align: center;
+            justify-items: center;
+        }
+
+        #language h3{
+            font-size: 16px;
+            margin-bottom: 0px;
+            margin-left: 30px;
+        }
+
+        #language p{
+            font-size: 12px;
+            margin-top: 0px;        
+            margin-left: 30px;
+        }
+        #Expertise{
+            padding-left: 30px;
+        }
+        #expertise{
+            background-color: #fefff7;
+            width: 300px;
+            height: 40px;
+            color: #ffc3dd;
+            border-radius: 22px;
+            text-align: center;
+            justify-items: center;
+            margin-bottom: 16px;
+        }
+        
+        #Expertise h3{
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-left: 30px;
+            margin-top: 0px;
+        }
+        
+        .logo-app{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            margin-top: 0px;
+            align-items: start;
+        }
+        .logo-app div{
+            display: flex;
+            align-items: top;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        .logo-app p{
+            display: flex;
+            align-items: top;
+            top: -5px;
+            padding-right: 30px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            padding-top: 0px;
+            justify-content: first baseline;
+        }
+        /* carousel */
+        #carousel{
+            width:1440px;
+            height: 494.16px;
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            position: relative;
+        }
+
+            /* carousel images */
+
+                .carousel-images{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    margin-top: 10px;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    scroll-behavior: snap;
+                    -webkit-overflow-scrolling: touch;
+                    margin-bottom: 0px;
+                    padding-bottom: 0px;
+                }
+
+                .caraousel-images ::-webkit-scrollbar{
+                    width: 5px;
+                    height: 5px;
+                    background-color: #06519E;
+                }
+
+                .caraousel-images::-webkit-scrollbar-thumb{
+                    background-color: black;
+                }
+
+                .caraousel-images img{
+                    width: 100%;
+                    transition: all 0.3s ease;
+                }
+                .image{
+                    position: absolute;
+                    display: none;
+                }
+
+                #main-img{
+                    display:flex;
+                }
+
+                    #img-1{
+                        max-width: 1440px;
+                    }
+                    #img-2{
+                        max-width: 1440px;
+                    }
+
+
+        /* layout */
+        .layout{
+            display: grid;
+            padding-top: 15px;
+            margin-top: 0px;
+            margin-bottom: 15px;
+        }
+            /* left part */
+            #left{
+                height: auto;
+                display: grid;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+                /* top */
+                #top{
+                    display: flex;
+                    padding-bottom: 30px;
+                }
+
+                .images{
+                    max-width: 400px;
+                    max-height: 300px;
+                }
+
+                #new-image{
+                    /* border: 20px solid #06519E; */
+                    padding: 0px;
+                    margin-top: 30px;
+                    margin-left: 30px;
+                }
+
+                #project-1-description{
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 50px;
+                    padding-left: 50px;
+                }
+
+                .project-number{
+                    font-size: 20px;
+                    font-style: italic;
+                }
+
+                .project-title{
+                    font-size: 40px;
+                    font-weight: bold;
+                    padding-top: 10px;
+                    padding-bottom: 0px;
+                }
+
+                .project-series{
+                    font-size: 15px;
+                    padding-top: 5px;
+                }
+
+                .description{
+                    font-size: 15px;
+                    padding-top: 20px;
+                }
+
+                #number-new{
+                    color: #cd2f2f;
+                }
+
+                #title-new{
+                    color: #06519E;
+                }
+
+                #series-new{
+                    color: #1b8bfb;
+                }
+                #description-new{
+                    color: #4ea7ff;
+                    margin-left: 10px;
+                }
+
+                #description-new p{
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+
+                #view-button{
+                    width: 150px;
+                    height: 40px;
+                    background-color: #06519E;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    border-radius: 22px;
+                    margin-top: 30px;
+                    margin-left: 100px;
+                    text-decoration: none;
+                }
+
+                #view-button a{
+                    text-decoration: none;
+                    color: #fefff7;
+                }
+
+                #view-button:hover{
+                    background-color:#ffc3dd;
+                    border-radius: 22px;
+                }
+
+                 /* bottom */
+                #bottom{
+                    display: flex;
+                    justify-content: space-around;
+                    padding-left: 0px;
+                    padding-right:0px;
+                    margin-right: 0px;
+                }
+
+                .bottom{
+                    padding-top: 30px;
+                    margin-top: 10px;
+                    padding-bottom: 10px;
+                    margin-bottom: 2p2;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color:#06519E;
+                }
+
+                #b-1{
+                    width: 33.33%;
+                    text-align: center;
+                    border-right: #06519E 2px solid;
+                } 
+                
+                #b-2{
+                    width: 33.33%;
+                    text-align: center;
+                    border-right: #06519E 2px solid;
+                }
+                
+                #b-3{
+                    width: 33.33%;
+                    text-align: center;
+                }
+
+                #bottom img{
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+
+            /* footer */
+            .footer{
+                padding-top: 20px;
+                width: 100%;
+                height: 50px;
+                background-color:#14173a;
+                display: flex;
+                justify-content: center;
+            }
+
+            .footer div{
+                color: #fefff7;
+                font-size: 20px;
+            }
+    </style>
+</head>
+<body>
+    <!-- nav -->
+    <div id="head">
+        <div id="logo">
+            <a id="logo-1" href="index.html"> Kellyn's portfolio </a>
+        </div>
+        <div id="options">
+            <a href="page 2-works.html"> Works </a>
+            <a href="page 3-about.html"> About </a>
+            <a href="page 4-contact.html"> Contact </a>
+        </div>
+    </div>
+
+    <!-- introduction -->
+    <div id="intro">
+        <img id="hello-pic" src="src/introduction-1.png" alt="">
+        <div id="description-me">
+            <div id="edu">
+                <div id="Edu">
+                    <h1>Education</h1>
+                </div>
+                <h3>High School (2018-2021)</h3>
+                <p>SMA Sutomo 1 Medan</p>
+                <h3>University (2021-now)</h3>
+                <p>Zhejiang University</p>
+            </div>
+
+            <div id="language">
+                <div id="lang-skill">
+                    <h1>Language Skill</h1>
+                </div>
+                <h3>Bahasa Indonesia</h3>
+                <p>First language</p>
+                <h3>English</h3>
+                <p>IELTS: 8.0</p>
+                <h3>Mandarin</h3>
+                <p>HSK 5: 256</p>
+            </div>
+
+            <div id="Expertise">
+                <div id="expertise">
+                    <h1>Expertise</h1>
+                </div>
+
+                <div class="logo-app">
+                    <div id="PS">
+                        <h3>Photoshop</h3>
+                    </div>
+                    <div id="AI">
+                        <h3>Illustrator</h3>
+                    </div>
+                    <div id="LR">
+                        <h3>Lightroom</h3>
+                    </div>
+                    <div id="AE">
+                        <h3>After Effect</h3>
+                    </div>
+                    <div id="PR">
+                        <h3>Premiere Pro</h3>
+                    </div>
+                    <div id="C4D">
+                        <h3>Cinema4D</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    <!-- layout -->
+    <div class="layout">
+        <div id="left">
+            <div id="top">
+                <img id="new-image" class="images" src="src/WechatIMG172.jpg" alt="photo of mountains"></img>
+                <div id="project-1-description">
+                    <div id="number-new" class="project-number">Latest Project</div>
+                    <div id="title-new" class="project-title">Amongst the Mountains</div>
+                    <div id="series-new" class="project-series"> Huangshan series</div>
+                    <div id="description-new"class="description">
+                        <p>taken on 18th November 2023</p>
+                        <p>camera: Canon EOS M50</p>
+                    </div>
+                    <div id="view-button">
+                        <a href="page 2-works.html" id="view more">Find out more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- heading -->
+            <div class="carousel">
+                <div class="carousel-images">
+                    <div id="main-img">
+                        <img id="img-1" src="src/main-img-2.png" alt="poster for photography side">
+                    </div>
+                    
+                    <div class="img">
+                        <img id="img-2" src="src/main-img-3.png">
+                    </div>
+                </div> 
+
+            </div>
+            
+
+            <div id="bottom">
+                <div class="bottom" id="b-1">
+                    <div class="title">Illustration</div>
+                    <div id="illustration">
+                        <img class="images" src="src/复古音乐节6.png" alt="poster design for music festival">
+                    </div>
+                </div>
+    
+                <div class="bottom" id="b-2">
+                    <div class="title">3D</div>
+                    <div id="3d">
+                        <img class="images" src="src/robot-1-2.jpg" alt="jellyfish robot 3d">
+                    </div>
+                </div>
+    
+                <div class="bottom" id="b-3">
+                    <div class="title">Photography</div>
+                    <div id="photography">
+                        <img class="images" src="src/西湖20.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- footer -->
+   <div class="footer">
+    <div>This is the end of my portfolio, thank you for coming!!</div>
+
+</div>
+</body>
+</html>

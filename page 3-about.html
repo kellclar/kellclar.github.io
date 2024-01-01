@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works</title>
+    <style>
+    /* body */
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #fefff7;
+    }
+
+    /* heading */
+    #head{
+            display: grid;
+            grid-template-columns: 50% 1fr;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: #06519E;
+        }
+        #logo{
+            display: flex;
+            margin-left: -250px;
+            justify-content: space-around;
+        }
+        #logo-1{
+            font-size: 35px;
+            font-weight: bold;
+            font-style: italic;
+            color: #ffc3dd;
+            text-decoration: none;
+        }
+        #options{
+            margin-right: 30px;
+            color: #fefff7;
+            text-align: center;
+        }
+
+        #options a{
+            text-decoration: none;
+            color: #fefff7;
+            justify-content: space-around;
+            padding: 40px;
+        }
+
+        #options a:hover{
+            color: #06519E;
+            background-color: #fefff7;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+    #main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        width: 1fr;
+    }
+
+    #text-into{
+        position: absolute;
+    }
+
+    #hello{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 100px;
+        position: absolute;
+        z-index: 2;
+        left: 8%;
+        color: #b3b3b3;
+        top: 25%;
+    }
+
+    #name{
+        margin-top: 0px;
+        font-size: 120px;
+        position: absolute;
+        z-index: 2;
+        left: 8%;
+        top: 35%;
+        color: #ffc3dd;
+    }
+
+    #me-text-1{
+        border-top: 4px solid #ffc3dd;
+        padding-left: 1%;
+        padding-top: 2%;
+        width: 800px;
+        position: absolute;
+        margin-top: 0px;
+        top: 55%;
+        z-index: 2;
+        left: 8%;
+        font-size: 30px;
+    }
+    
+    #me-text-2{
+        position: absolute;
+        padding-left: 1%;
+        margin-top: 0px;
+        padding-top: 3%;
+        top: 58%;
+        left: 8%;
+        z-index: 2;
+        font-size: 30px;
+    }
+    
+    #me-text-3{
+        position: absolute;
+        padding-left: 1%;
+        padding-top: 3%;
+        margin-top: 0px;
+        top: 62%;
+        left: 8%;
+        z-index: 2;
+        font-size: 30px;
+    }
+    #outer-box{
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 850px;
+    }
+
+    #pic-box{
+        position: absolute;
+        width: 100%;
+    }
+    
+    #me-pic{
+        max-height: 850px;
+        margin-left: 60%;
+        animation-duration: 1.5s;
+        animation-name: movetoframe;
+        margin-bottom: 0px;
+    }
+
+    @keyframes movetoframe{
+        from{margin-left: 100%;}
+        to{margin-left: 60%;}
+    }
+
+    #box-2{
+        height: 900px;
+        background-color: #b3b3b3;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    #birth-year{
+        margin-top: 0px;
+        margin-bottom: 30px;
+        height: 350px;
+        padding-top: 0px;
+        font-size: 360px;
+        float: right;
+        margin-right: 80px;
+        margin-left: 0px;
+        font-style: oblique 20deg;
+        color: #fefff7;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+    }
+
+    #textbox{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        /* margin-top: 20px; */
+        margin-left: 40px;
+    }
+
+    #t{
+        float: left;
+        font-size: 20px;
+        margin-left: 30px;
+        font-size: 20px;
+        font-size: 70px;
+        margin-bottom: 0px;
+        color: #fefff7;
+    }
+
+    #title{
+        margin-top: 0 px;
+        float: left;
+        font-size: 20px;
+        margin-left: 30px;
+        display: flex;
+        gap: 32px;
+        width: 10%;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 50px 30px;
+        align-items: center;
+    }
+    
+    #t-1{
+        color: #fefff7;
+        font-size: 70px;
+        margin-top: 0px;
+    }
+
+    #t-2{
+        color: #ffc3dd;
+        font-size: 100px;
+        margin-top: 0px;
+    }
+
+    #facts-points{
+        color: #14173a;
+        font-size: 50px;
+        width: 1000px;
+        margin-left: 80px;
+        height: fit-content;
+        display: flex;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* footer */
+    .footer{
+        padding-top: 20px;
+        width: 100%;
+        height: 50px;
+        background-color:#14173a;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer div{
+        color: #fefff7;
+        font-size: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="head">
+        <div id="logo">
+            <a href="index.html" src="logo-1" id="logo-1"> Kellyn's portfolio </a>
+        </div>
+        <div id="options">
+            <a href="page 2-works.html"> Works </a>
+            <a href="page 3-about.html"> About </a>
+            <a href="page 4-contact.html"> Contact </a>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="text-intro">
+            <h1 id="hello">Hello, I'm</h1>
+            <h1 id="name">Kellyn Clarissa</h1>
+            <p id="me-text-1"> A student from Indonesia </p>
+            <p id="me-text-2">Currently on my third year in Zhejiang University</p>
+            <p id="me-text-3">Majoring in Art and Science and Technology</p>
+        </div>
+        <div id="outer-box">
+            <div id="pic-box">
+                <img src="src/about-me-pic.jpg" id="me-pic">
+            </div>
+        </div>
+    </div>
+    <div id="box-2">
+        <div id="textbox">
+            <h1 id="t">Fun facts</h1>
+            <div id="title">
+                <h1 id="t-1">about</h1>
+                <h1 id="t-2">ME</h1>
+                <h1 id="t-1">!!</h1>
+            </div>
+        </div>       
+        <h2 id="birth-year">2003</h2>
+        <ul id="facts-points">
+            <li>I'm born in November aka a SCORPIO baby</li>
+        </ul>
+        <ul id="facts-points">
+            <li>I'm a dog person and have a poodle called Zoeyi and a pom called Coco</li>
+        </ul>
+
+        <ul id="facts-points">
+            <li>Ice cream is the loml</li>
+        </ul>
+
+        <ul id="facts-points">
+            <li>Obsessed with Taylor Swift, Lana Del Rey, Percy Jackson, and Hamilton</li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div>This is the end of my portfolio, thank you for coming!!</div>
+    </div>
+
+</body>
+</html>
